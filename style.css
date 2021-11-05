@@ -1,0 +1,379 @@
+.wrapper {
+    background-color: rgba(20, 19, 19, 0.877);
+}
+
+/*Logo CSS class*/
+#logo {
+    width: 125px;
+    border: 0px;
+    margin-top: 40px;
+    padding-left: 50px;
+}
+
+.navbar{
+    max-height: 80px;
+}
+/*Inner Navbar CSS classes*/
+.navbar-nav {
+    margin-right: 3vw;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'montserrat';
+    font: bold 14px arial;
+    color: rgba(255, 255, 255, 1);
+    margin-right: 30px;
+}
+
+/*Home CSS class*/
+.home {
+    background: url(homeback1.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: static;
+}
+
+#statement {
+    font-family: 'Oswald';
+    font-size: 70px;
+    margin-top: 170px;
+    text-align: left;
+    
+}
+
+/*Formdivision CSS class*/
+.formdiv {
+    padding-top: 125px;
+}
+
+.formdiv {
+    display: block;
+    position: relative;
+    justify-self: left;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+/*Mainform layout CSS classes*/
+.mainform {
+    position: relative;
+    background-color: rgb(97, 176, 212, 1);
+    width: 350px;
+    height: 470px;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.mainform div {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.mainform hr {
+    justify-self: center;
+    width: 250px;
+}
+
+.card-body h5 {
+    padding-left: 85px;
+}
+
+/* mainform/front CSS Classes*/
+#fronthead {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 90px;
+}
+
+/* mainform/back CSS Classes*/
+#backhead {
+    position: relative;
+    padding-left: 95px;
+}
+
+.card .back {
+    background-color: rgb(97, 176, 212, 1);
+    margin-top: -470px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.bckbtn {
+    background-color: rgb(97, 176, 212, 1);
+}
+
+/*form flip Class*/
+.card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/*Quote Slider CSS*/
+.quoteslider {
+    position: relative;
+    width: 100%;
+    margin-top: -130px;
+    padding-bottom: 50px;
+}
+
+/*carousel quote classes*/
+.quoteitem {
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+    font-family: 'Montserrat';
+}
+
+nav{
+    background-color: transparent;
+}
+
+/*SectionOverlay CSS classes*/
+.section-overlay {
+    height: 10px;
+    border-left: 50px rgba(12, 12, 12, 0.877);
+    border-bottom: 100px solid transparent;
+}
+
+.facts {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.fcthead{
+    font-family: 'Montserrat';
+    font-display: bolder;
+}
+
+.facts hr {
+    width: 250px;
+    height: 3px;
+}
+
+.fact {
+
+    padding-top: 0px;
+}
+
+.fact p {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.services {
+    background-image: url(serviceback.jpeg);
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.servlayer{
+   background-color: #11100f44;
+}
+
+.servhead {
+    font-family:'Montserrat';
+    font-display: bolder;
+    padding-top: 50px;
+}
+
+.services hr {
+    width: 260px;
+    height: 3px;
+}
+
+.flips {
+    padding-bottom: 50px;
+}
+
+.flip-card {
+    position: relative;
+    background-color: transparent;
+    height: 150px;
+    perspective: 1000px;
+    margin-top: 10px;
+    max-width: 350px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    font-family: 'Montserrat';
+    padding-top: 40px;
+    background-color: rgba(20, 18, 18, 0.925);
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #38302f;
+    color: white;
+    padding-top: 30px;
+    transform: rotateY(180deg);
+}
+
+.teamhead{
+    font-family: 'Montserrat';
+    font-display: bolder;
+}
+
+.team hr {
+    width: 250px;
+    height: 3px;
+}
+
+.team {
+    position: relative;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.carousel-item img {
+    padding-top: 30px;
+}
+
+.email {
+    background-image: url(emailback.jpeg);
+    opacity: 1;
+    background-attachment: fixed;
+    position: static;
+    background-size: cover;
+
+}
+
+.mailhead {
+    /* margin-left: 350px;*/
+    padding-top: 20px;
+    font-size: 35px;
+    font-display: bolder;
+    text-align: center;
+}
+
+.email hr {
+    width: 300px;
+    height: 3px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footnote p{
+    font-size: 20px;
+}
+
+.endform {
+
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-display: bolder 40px;
+    text-align: center;
+}
+
+.linklist {
+    list-style: none;
+}
+
+.linkitem a:link {
+    color: white;
+}
+
+.linkitem a:visited {
+    color: white;
+}
+
+.footicons {
+    position: relative;
+    margin-top: 10px;
+}
+
+.implinks li{
+    margin-left: -30px;
+}
+
+/*Media Queries Start*/
+@media screen and (max-width:992px) {
+    #logo {
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    #statement {
+        margin-left: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .quoteslider {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:330px) {
+    #statement {
+        font-size: 30px;
+    }
+
+    .carousel-item {
+        width: 70%;
+        height: 70%;
+    }
+
+}
+
+@media screen and (min-width:610px) {
+    #statement {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .footer{
+        text-align: left;
+    }
+}

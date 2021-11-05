@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Urban Housing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Page Wrapper Starts-->
+    <section class="wrapper">
+        <!--Header Section Starts-->
+        <section class="header">
+            <!--Navbar Starts-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <!--Logo Starts-->
+                <div class="navbar-brand">
+                    <img id="logo" src="logo.jpg" alt="logo">
+                </div>
+                <!--Logo Ends-->
+                <!--Navbar Icon Starts-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <!--Navbar Icon Ends-->
+                <!--Navbar List Starts-->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button class="formbtn d-lg-none btn btn-primary" type="button"
+                                onclick=>LogIn/SignUp</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#facts"><i class="fa fa-user"></i> About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services"><i class="fa fa-cog"></i> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team"><i class="fa fa-users"></i> Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mailform"><i class="fa fa-phone"></i> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Navbar List Ends-->
+            </nav>
+            <!--Navbar Ends-->
+        </section>
+        <!--Header Section Ends-->
+        <!--Home Section Starts-->
+        <section class="home" id="home">
+            <div class="container">
+                <div class="row">
+                    <!--Statement Starts-->
+                    <div class=" col-10 offset-1 col-md-9 offset-lg-0 col-lg-7 statement">
+                        <div class="text-warning " id="statement">
+                            <p class="text-light">URBAN HOUSING</p>
+                            <p class="text-warning">MADE SIMPLE</p>
+
+                        </div>
+                    </div>
+                    <!--Statement Ends-->
+                    <!--Formdiv Starts-->
+                    <div class=" col-lg-2 offset-xl-1 d-none d-lg-block formdiv">
+                        <!--Card Starts-->
+                        <div class="card mainform" id="mainform">
+                            <!--Card-Front Starts-->
+                            <div class="front">
+                                <!--CardTitle-->
+                                <h5 class="card-title text-light" id="fronthead">ACCOUNT LOGIN</h5>
+                                <hr class="bg-light">
+                                <!--CardBody Starts-->
+                                <div class="card-body">
+                                    <form class="signup">
+                                        <div class="form-group text-light">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter Email" name="Email" required>
+                                        </div>
+                                        <div class="form-group text-light">
+                                            <label for="psw">Password</label>
+                                            <input type="password" class="form-control" id="pno"
+                                                placeholder="Enter Password" name="psw" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary lgbtn mt-3">Login</button><br>
+                                        <p class="mt-1" id="reglnk">Dont have an Account?<button type="button"
+                                                class="regbtn btn btn-primary ml-3" onclick="flip()">Sign Up</button>
+                                        </p>
+                                    </form>
+                                    <hr class="bg-light">
+                                    <h5 class="text-light"> Or Login With</h5>
+                                    <!--SocialMedia Icons-->
+                                    <div class="socmed">
+                                        <a href="#"><i class="fa fa-facebook-official"
+                                                style="color:white; font-size:30px; padding-left: 105px;"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus-square"
+                                                style="color:white; font-size:30px; padding-left:35px;"></i></a>
+                                    </div>
+                                </div>
+                                <!--CardBody Ends-->
+                            </div>
+                            <!--Card-Front Ends-->
+                            <!--Card-Back Starts-->
+                            <div class="back">
+                                <!--Card Title-->
+                                <button class="btn backbtn mt-3 ml-2 text-light" onclick="flip()"><i
+                                        class="fa fa-arrow-left"></i></button>
+                                <h4 class="card-title text-light" id="backhead">Create Account</h4>
+                                <h7 class="card-title text-light pl-5">Please fill in this form to create account</h7>
+                                <hr class="bg-light">
+                                <!--Card Body-->
+                                <div class="card-body">
+                                    <form class="signup">
+                                        <div class="form-group text-light">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter Email" name="Email" required>
+                                        </div>
+                                        <div class="form-group text-light">
+                                            <label for="pno">Phone No.</label>
+                                            <input type="number" class="form-control" id="pno"
+                                                placeholder="Enter Phone No." name="pno" required>
+                                        </div>
+                                        <div class="form-group text-light">
+                                            <label for="psw">Password</label>
+                                            <input type="password" class="form-control" id="pno"
+                                                placeholder="Enter Password" name="psw" required>
+                                        </div>
+                                        <button type="submit"
+                                            class="regbtn btn btn-primary mt-2 ml-1 mr-5">SignUp</button>
+                                </div>
+                            </div>
+                            <!--CardEnds-->
+                        </div>
+                        <!--FormdivEnds-->
+                    </div>
+                </div>
+
+
+            </div>
+            <!--Quote Slider Section Start-->
+            <div class="container quoteslider">
+                <div class="row">
+                    <div class="col-9 offset-1 offset-lg-0 col-lg-6">
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#mycarousel" data-slide-to="1"></li>
+                                <li data-target="#mycarousel" data-slide-to="2"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item quoteitem text-light active ">
+                                    <p><i class="fa fa-quote-left"></i> Quality and Affordable Housing is the key
+                                        element of a strong and secure Iowa <i class="fa fa-quote-right"></i></p>
+                                </div>
+                                <div class="carousel-item quoteitem text-light ">
+                                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tempore, eveniet. Autem, magni. <i
+                                            class="fa fa-quote-right"></i></p>
+                                </div>
+                                <div class="carousel-item quoteitem text-light">
+                                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Iure, id quo voluptatum.<i class="fa fa-quote-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home Section Ends-->
+        <!--Section-overlay-->
+        <div class="section-overlay"></div>
+        <!--About US Section Starts-->
+        <section class="facts" id="facts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h1 class="text-warning fcthead">COOL FACTS</h1>
+                        <h6 class="text-light">OUR NUMBERS</h6>
+                        <hr class="bg-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 offset-2 col-lg-2 offset-lg-1 text-light mt-5 fact">
+                        <i class="fa fa-home fa-5x"></i>
+                        <h4 id="count1">100+</h4>
+                        <h4>HOME LOANS</h4>
+                    </div>
+                    <div class="col-8 offset-2 col-lg-2 offset-lg-2 text-light mt-5 fact">
+                        <i class="fa fa-archive fa-5x"></i>
+                        <h4 id="count2">60+</h4>
+                        <h4>PROJECTS</h4>
+                    </div>
+                    <div class="col-8 offset-2 col-lg-2 offset-lg-2 text-light mt-5 fact">
+                        <i class="fa fa-users fa-5x"></i>
+                        <h4 id="count3  ">1000+</h4>
+                        <h4>CLIENTS</h4>
+                    </div>
+                </div>
+                <br>
+            </div>
+            </div>
+        </section>
+        <!--About US Section Ends-->
+        <!--Section-Overlay-->
+        <div class="section-overlay"></div>
+        <!--Services Section Starts-->
+        <section class="services" id="services">
+            <div class="servlayer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h1 class="text-warning servhead">OUR SERVICES</h1>
+                        <h6 class="text-light">WHAT WE DO</h6>
+                        <hr class="bg-light">
+                    </div>
+                </div>
+                <div class="flips">
+                    <div class="row">
+                        <div class="col-8 offset-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front text-light">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <h4>Creative Solutions</h4>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint
+                                            nostrum dolores quo in ratione temporibus id sunt porro quidem rerum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-8 offset-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 ">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front text-light">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <h4>Creative Solutions</h4>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint
+                                            nostrum dolores quo in ratione temporibus id sunt porro quidem rerum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-8 offset-2 col-md-6 offset-md-3 col-lg-4 offset-lg-0 ">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front text-light">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <h4>Creative Solutions</h4>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint
+                                            nostrum dolores quo in ratione temporibus id sunt porro quidem rerum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </section>
+        <!--Services Section Ends-->
+        <!--Section-Overlay-->
+        <div class="section-overlay"></div>
+        <!--Team Section Starts-->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1 col-lg-10">
+                        <h1 class="text-warning teamhead">OUR TEAM</h1>
+                        <h6 class="text-light">WHO WE ARE</h6>
+                        <hr class="bg-light">
+                    </div>
+                </div>
+                <div id="pics" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="5000">
+                            <div class="row">
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="first">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="second">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="third">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                            <div class="row">
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="first">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0 ">
+                                    <img src="teamgal.JPG" alt="second">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0 ">
+                                    <img src="teamgal.JPG" alt="third">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="5000">
+                            <div class="row">
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="first">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="second">
+                                </div>
+                                <div class="col-8 offset-2 col-lg-4 offset-lg-0">
+                                    <img src="teamgal.JPG" alt="third">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Team Section Ends-->
+        <!--Section-Overlay-->
+        <div class="section-overlay"></div>
+        <!--Send Email Starts-->
+        <section class="email mt-4" id="mailform">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-warning mailhead">SEND US AN EMAIL</h1>
+                        <hr class="bg-light">
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                            <div class="form-group text-light endform">
+                                <input type="email" class="form-control" id="emailform"
+                                    placeholder="Enter E-Mail Address">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                            <div class="form-group text-light endform ">
+                                <textarea class="form-control" id="Subject" placeholder="Write Something!!"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 offset-lg-2 col-xl-8 offset-xl-3">
+                            <button type="submit" class="btn btn-primary mt-3 mb-5">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--Send Email Ends-->
+        <!--Footer Starts-->
+        <section class="footer mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 offset--md-1 col-lg-3 offset-lg-1 ">
+                        <div class="footnote ml-2">
+                            <h5 class="text-warning">About us</h5>
+                        </div>
+                       <h6 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magni, labore architecto laboriosam sint doloribus ullam alias temporibus vitae accusamus quasi quam deserunt minima voluptatem dicta eligendi commodi!</h6>
+                    </div>
+                    <div class="col-5 offset-1 col-md-3 col-lg-2 offset-lg-0 ">
+                        <div class="implinks">
+                            <h6 class="text-warning ">Important Links</h6>
+                            <ul class="linklist">
+                                <li class="linkitem">
+                                    <a href="#home"><i class="fa fa-home"></i> Home</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#facts"><i class="fa fa-user"></i> About Us</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#services"><i class="fa fa-cog"></i> Services</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#team"><i class="fa fa-users"></i> Team</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#mailform"><i class="fa fa-phone"></i> Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 offset-1 col-md-3 col-lg-2 offset-lg-0">
+                        <div class="implinks ml-2">
+                            <h6 class="text-warning">Important Links</h6>
+                            <ul class="linklist">
+                                <li class="linkitem">
+                                    <a href="#home"><i class="fa fa-home"></i> Home</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#facts"><i class="fa fa-user"></i> About Us</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#services"><i class="fa fa-cog"></i> Services</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#team"><i class="fa fa-users"></i> Team</a>
+                                </li>
+                                <li class="linkitem">
+                                    <a href="#mailform"><i class="fa fa-phone"></i> Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 offset-lg-0">
+                            <div class="newsletter">
+                                    <h5 class="text-warning">Subscribe to our Newsletter</h5>
+                                </div>
+                                <form>
+                                    <div class="form-group text-light">
+                                        <input type="email" class="form-control" id="emailform"
+                                            placeholder="Enter E-Mail Address">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                      <h4 class="text-warning">Connect With Us</h4>
+                        <div class="footicons">
+                            <i class="fa fa-facebook-official d-inline text-light fa-2x  pr-3"></i>
+                            <i class="fa fa-google-plus-official d-inline text-light fa-2x pr-3"></i>
+                            <i class="fa fa-twitter-square d-inline text-light fa-2x pr-3"></i>
+                            <i class="fa fa-instagram d-inline text-light fa-2x pr-3"></i>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--Page Wrapper Ends-->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
